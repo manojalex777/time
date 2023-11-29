@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Switch Signal</title>
+</head>
+
+<body>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .color-block {
+            margin-top: 50px;
+            width: 45%;
+            border: 5px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        
+        .color-block:first-child {
+            background-color: rgb(255, 255, 255);
+            margin-left: 80px;
+        }
+        
+        .color-block:last-child {
+            margin-right: 100px;
+            margin-right: 50px;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <div class="container">
+    <div class="color-block" id="div1"></div>
+    <h1>kitchen
+    </h1>
+    
+    <div class="color-block" id="div2">
+        <h2>bedroom</h2>
+    
+    </div>
+    <div class="border:5px solid black; width:30px; height:80px; margin-left:100px;"></div>
+    <button class="bulb-button mt-2" id="bulbButton" onclick="kitbulb()">kitchen-bulb</button>
+    <button class="fan-button mt-2" id="fanbtn" onclick="kitfan()">kitchen-fan</button>
+    <button class="kitchen-ex mt-2" id="exbtn" onclick="kitex()">kitchen-ex </button>
+    <hr style="height:5px; color: black; ">

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vehicle Parking Information</title>
+        <style>
+            body {
+                background-image: url("../image/john-matychuk-yvfp5YHWGsc-unsplash.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color:burlywood;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0;
+                padding:0;
+                 }
+                 h1 {
+                    text-align: center;
+                    padding: 20px;
+                 }
+                 label {
+                    display: block;
+                    margin-bottom: 20px;
+                 }
+                  select {
+                    width: 100%;
+                    padding: 5px;
+                    margin-bottom: 0px;
+                    
+                    border-radius: 4px;
+                  }
+                  input[submit="submit"] {
+                    background-color:azure;
+                    color: azure;
+                    padding: 10px 20px;
+                    border:none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                  }
+                 input[type="submit"]:hover {
+                    background-color: aliceblue;
+                 }
+        </style>
+    </head>
+        <body>
+            <div id="fo">
+            <h2>Vehicle Parking Information info</h2>
+                <form action="submit.html" method="get">
+                 <table>
+                    <tr>
+                    <td>vehicle number</td>
+                    <td><input type="text" id="vehiclenumber" name="vehiclenumber" required></td>
+                    </tr>
+                    <tr>
+                    <td>Vehicle type</td>
+                    <td><select id="vehicletype">
+                    <option>car</option>
+                    <option>motorcycle</option>
+                    <option>truck</option>
+                    </select>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>ownername</td>
+                    <td><input type="text" id="owner name" name="owner name" required></td>
+                    </tr>
+                    <tr>    
+                    <td>Vehicle Hours Parked</td>
+                    <td><input type="number" id="vehicleHours" name="vehicleHours" required></td>
+                    </tr>
+                    <tr>
+                    <td>Entry Time</td>
+                    <td><input type="time" id="entryTime" name="entryTime" required></td>
+                    </tr>
+                    <tr>
+                    <td>Departure Time</td>
+                    <td><input type="time" id="departureTime" name="departureTime" required></td><br>
+                    </tr>
+                    <tr>
+                    <td>submit</td>    
+                    <td><input type="submit" value="Register"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <style>
+            #fo{
+                margin-left: 400px;
+            }
+        </style>
+    </body>
+</html>
